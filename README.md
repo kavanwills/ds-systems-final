@@ -9,12 +9,20 @@
 ## System Overview
 
 ### Course Concept(s)
-This project demonstrates concepts from **Module 3: Web APIs and Containerization**:
+
+This project integrates concepts from multiple course modules, with primary focus on **Weeks 10-11: Infrastructure - Cloud Services / APIs / Containers**:
+
+**Primary Concepts:**
 - RESTful API design with Flask framework and HTTP methods
 - Containerization with Docker for reproducible, portable deployments
-- Environment-based configuration management using environment variables
-- Data serving patterns with query parameter filtering
 - Health check endpoints for monitoring and orchestration
+
+**Supporting Concepts:**
+- **Week 1:** Linux command-line interface and bash operations
+- **Week 2:** Version control with Git and GitHub
+- **Weeks 3-4:** Shell scripting for testing and automation (smoke.sh)
+- **Week 5:** Data storage and management (CSV data loading and filtering)
+- Environment-based configuration management
 
 ### Architecture Diagram
 ![Architecture Diagram](assets/architecture.png)
@@ -139,8 +147,6 @@ Start the container (see "How to Run"), then in another terminal:
 - **Startup time:** < 2 seconds from `docker run` to accepting requests
 - **Response time:** < 10ms for health check, < 50ms for data endpoints
 - **Resource footprint:** ~50MB container image, ~30MB RAM at runtime
-
-```
 
 ## What's Next
 
