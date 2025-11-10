@@ -1,6 +1,6 @@
 # Final Project for Systems - Flask + Docker API
 
-## Summary
+## Executive Summary
 This project exposes a small CSV dataset over HTTP using a Flask application running inside a Docker container. It shows environment-based configuration, containerization, and a simple data-serving endpoint.
 
 ## Project Structure
@@ -50,11 +50,22 @@ Start the container (see “How to Run”), then in another terminal:
 	$ curl "http://localhost:5055/records?genre=pop"
 	[{"genre":"pop","id":"1","name":"Song A"}, {"genre":"pop","id":"3","name":"Song C"}]
 
+## Results & Evaluation
+The service responds to health checks and returns filtered data from the CSV.
+
+- GET /health → 200 OK with {"status":"ok"}
+- GET /records → returns all 4 demo rows
+- GET /records?genre=pop → returns only rows with genre=pop
+
+This demonstrates the container is healthy and the API can filter data.
+
 ## Design Decisions
 - Used Flask for a minimal REST-style API.
 - Loaded CSV into memory to avoid database setup.
 - Used environment variables (.env.example) so paths are not hardcoded.
 - Packaged as a single container for reproducible runs.
+- No secrets are committed; configuration uses environment variables (.env.example).
+- Container logs to stdout, so it can be monitored easily when deployed.
 
 ## Architecture
 	client (curl / browser)
@@ -62,3 +73,7 @@ Start the container (see “How to Run”), then in another terminal:
 	Flask app (src/app.py)
 	        ↓
 	in-memory data from assets/sample.csv
+
+## Links
+- GitHub repo: https://github.com/kavanwills/ds-systems-final
+
