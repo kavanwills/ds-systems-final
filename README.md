@@ -28,6 +28,7 @@ This project exposes a small CSV dataset over HTTP using a Flask application run
 
 ## How to Run
 	docker build -t myapp .
+
 	docker run --rm -p 5055:5055 --env-file .env.example myapp
 
 In another terminal:
