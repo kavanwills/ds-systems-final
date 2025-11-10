@@ -25,6 +25,7 @@ This project exposes a small CSV dataset over HTTP using a Flask application run
 	- GET /records?genre=pop -> filtered rows (example query param)
 - Port: 5055
 - Config: DATA_PATH environment variable
+![Architecture Diagram](assets/architecture.png)
 
 ## How to Run
 	docker build -t myapp .
