@@ -190,7 +190,7 @@ View build status: [![CI](https://github.com/kavanwills/ds-systems-final/actions
 
 ## Links
 - **GitHub Repository:** https://github.com/kavanwills/ds-systems-final
-- **Live Demo:** [YOUR-RENDER-URL-HERE] *(Add after deployment)*
+- **Live Demo:** https://ds-systems-final.onrender.com *(Add after deployment)*
 - **CI/CD Pipeline:** https://github.com/kavanwills/ds-systems-final/actions
 
 ---
