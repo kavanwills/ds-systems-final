@@ -140,13 +140,6 @@ Start the container (see "How to Run"), then in another terminal:
 - **Response time:** < 10ms for health check, < 50ms for data endpoints
 - **Resource footprint:** ~50MB container image, ~30MB RAM at runtime
 
-## Architecture
-```
-client (curl / browser)
-        ↓
-Flask app (src/app.py)
-        ↓
-in-memory data from assets/sample.csv
 ```
 
 ## What's Next
