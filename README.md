@@ -206,9 +206,3 @@ This project was developed with assistance from Claude (Anthropic) and ChatGPT (
 - **Documentation assistants** for structuring the case study write-up
 
 All code was tested, validated, and understood before submission. The project demonstrates learned concepts from multiple course modules (Weeks 1, 2, 3-4, 5, and 10-11) with hands-on implementation and deployment.
-
-Special thanks to:
-- Flask framework and documentation
-- Docker community for containerization best practices
-- Render.com for free-tier cloud hosting
-- Course materials and instructors for guidance on systems engineering and API design
